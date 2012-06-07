@@ -1,0 +1,15 @@
+Step 1)
+Path Planning (EPF, Dubins, Straight line, others?)
+
+Step 2) 
+Enter Collision Avoidance
+
+	No - Continue on current path (see Step 1)
+
+	Yes - Is collision due to a path intersection or conflict zone intersection?
+		
+		Path Intersection - FL engine #1
+		Conflict Zone intersection - FL engine #2
+
+
+Problems:
