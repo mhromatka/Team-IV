@@ -26,8 +26,22 @@ EPF approach finished first 10 percent
 
 
 
+Proportional Navigation-Based Optimal Collision Avoidance for UAVs
+Widely used in missile guidance problems, it can be used in collision avoidance by guiding the relative velocity vector to collision avoidance vector
+
+This paper proposed a collision avoidance law based on conventional Proportional Navigation (PN) guidance law. First, a collision avoidance vector is defined and the heading of the aircraft is directed toward this vector. The total approach is called Proportional Navigation-based Collision Avoid Guidance (PNCAG). The approach uses the "collision cone" method to determine when to collision avoidance mode. Put picture here.  
 
 
+Reactive Collision paper by Manthara
+This algorithm performs a Dubins path for each plane and then considers only the most imminent predicted collision for each aircraft and tries to increase the line of sight (LOS) rate to avoid. 
+
+When a UAV detects multiple planes that are on a collision course with itself, it will select the most imminent collision to avoid that has a predicted zero effort miss (ZEM) of less than the minimum desired separation. The LOS is increased by applying a lateral acceleration to increase the rate of rotation of the LOS connecting these two UAVs. The UAV takes the sharpest turn available until the collision course is avoided.
+
+This research uses very different simulation and metrics to test this algorithm. Planes initial positions are chosen to be evenly spaced around a circle that dictates the outside of the test space. A random goal point is published for each plane, somewhere on a smaller, concentric circle. This setup eliminates the chance the random plane positions will be chosen in the test space that are actually INSIDE or very near to a conflict zone of another plane. Choosing an initial position is one major limitation of our research simulation setup. The PNCAG's simulation setup does not take into account multiple waypoints, however. 
+
+Efficiency is measured by deviation from initial Dubins path.
+
+This research had very promising results for both collision reduction and path efficiency. With an outer circle radius of 500 meters, 20 to 60 UAVs were simulated, giving comparable scenarios to our research goals. The efficiencies achieved were very good (around 90 percent). The research cannot be completely compared to Auburn's 2011 REU because multiple waypoints were not achieved (the values were averaged over 10 runs with a single waypoint goal here) and the simulation starting points and goals were chosen in an advantageous manner, as described before.
 
 
 
