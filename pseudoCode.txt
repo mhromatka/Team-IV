@@ -2,14 +2,25 @@ Step 1)
 Path Planning (EPF, Dubins, Straight line, others?)
 
 Step 2) 
-Enter Collision Avoidance
+Enter Collision Avoidance or not?
+-Decide this based on geometric approach and feed that info to FL engine
 
 	No - Continue on current path (see Step 1)
 
 	Yes - Is collision due to a path intersection or conflict zone intersection?
 		
 		Path Intersection - FL engine #1
+			output = change in heading
+				convert heading to point one step into future
+
 		Conflict Zone intersection - FL engine #2
+			output = change in heading
+				convert heading to point one step into future
 
 
 Problems:
+
+Ideas for simulation
+
+Run 4 planes with C.A. on top of 4 planes with same goals without.
+Run 4 planes without C.A. in same sim as 4 planes with, to see how reacts with "enemy" planes
