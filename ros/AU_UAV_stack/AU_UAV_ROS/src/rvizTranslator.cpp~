@@ -20,6 +20,7 @@ is already setup along with a dummy version of how the service request would wor
 #include "AU_UAV_ROS/GoToWaypoint.h"
 #include <tf/transform_broadcaster.h>
 #include <visualization_msgs/Marker.h>
+#include "AU_UAV_ROS/RequestWaypointInfo.h"
 
 
 #define WEST_MOST_LONGITUDE -85.490356
@@ -35,8 +36,9 @@ is already setup along with a dummy version of how the service request would wor
 //publisher is global so callbacks can access it
 ros::Publisher marker_pub;
 
+
 //ROS service client for calling a service from the coordinator
-ros::ServiceClient client;
+ros::ServiceClient requestWaypointInfoClient;
 
 //keeps count of the number of services requested
 int count;
@@ -76,8 +78,8 @@ void telemetryCallback(const AU_UAV_ROS::TelemetryUpdate::ConstPtr& msg)
 	//TODO:Make this function do something useful, aka an avoidance algorithm
 	//ROS_INFO("Received update #[%lld]", msg->currentWaypointIndex);
 	static tf::TransformBroadcaster br;
-  	tf::Transform transform;
-  	//transform.setOrigin( tf::Vector3(msg->currentLatitude, msg->currentLongitude,msg->currentAltitude) );
+	tf::Transform transform;
+	//transform.setOrigin( tf::Vector3(msg->currentLatitude, msg->currentLongitude,msg->currentAltitude) );
 
 	//set up verticies of triangle
 	struct waypoint northsouthpoint;
@@ -89,16 +91,16 @@ void telemetryCallback(const AU_UAV_ROS::TelemetryUpdate::ConstPtr& msg)
 
 
 	transform.setOrigin( tf::Vector3(distance(origin,eastwestpoint), -distance(origin,northsouthpoint),0));
-  	transform.setRotation( tf::Quaternion(0, 0, msg->targetBearing) );
+	   transform.setRotation( tf::Quaternion(0, 0, msg->targetBearing) );
 	int planeID = msg->planeID;
 	char buffer [5];
 	sprintf(buffer, "%d",planeID);
-  	br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "world", buffer));
+	   br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "world", buffer));
 
 	uint32_t shape = visualization_msgs::Marker::SPHERE;
 
 	visualization_msgs::Marker marker;
-	// Set the frame ID and timestamp.  See the TF tutorials for information on these.
+	// Set the frame ID and timestamp. See the TF tutorials for information on these.
 
 	std::stringstream sstm;
 	sstm << "/" << buffer;
@@ -107,18 +109,18 @@ void telemetryCallback(const AU_UAV_ROS::TelemetryUpdate::ConstPtr& msg)
 
 	marker.header.stamp = ros::Time::now();
 
-	// Set the namespace and id for this marker.  This serves to create a unique ID
+	// Set the namespace and id for this marker. This serves to create a unique ID
 	// Any marker sent with the same namespace and id will overwrite the old one
 	marker.ns = "basic_shapes";
 	marker.id = planeID;
 
-	// Set the marker type.  Initially this is CUBE, and cycles between that and SPHERE, ARROW, and CYLINDER
+	// Set the marker type. Initially this is CUBE, and cycles between that and SPHERE, ARROW, and CYLINDER
 	marker.type = shape;
 
-	// Set the marker action.  Options are ADD and DELETE
+	// Set the marker action. Options are ADD and DELETE
 	marker.action = visualization_msgs::Marker::ADD;
 
-	// Set the pose of the marker.  This is a full 6DOF pose relative to the frame/time specified in the header
+	// Set the pose of the marker. This is a full 6DOF pose relative to the frame/time specified in the header
 	marker.pose.position.x = 0;
 	marker.pose.position.y = 0;
 	marker.pose.position.z = 0;
@@ -149,25 +151,25 @@ void telemetryCallback(const AU_UAV_ROS::TelemetryUpdate::ConstPtr& msg)
 	uint32_t arrow = visualization_msgs::Marker::ARROW;
 
 	visualization_msgs::Marker marker2;
-	// Set the frame ID and timestamp.  See the TF tutorials for information on these.
+	// Set the frame ID and timestamp. See the TF tutorials for information on these.
 
 	marker2.header.frame_id = marker.header.frame_id;
 
 
 	marker2.header.stamp = ros::Time::now();
 
-	// Set the namespace and id for this marker.  This serves to create a unique ID
+	// Set the namespace and id for this marker. This serves to create a unique ID
 	// Any marker sent with the same namespace and id will overwrite the old one
 	marker2.ns = "basic_shapes";
-	marker2.id = planeID;
+	marker2.id = planeID+1000;
 
-	// Set the marker type.  Initially this is CUBE, and cycles between that and SPHERE, ARROW, and CYLINDER
+	// Set the marker type. Initially this is CUBE, and cycles between that and SPHERE, ARROW, and CYLINDER
 	marker2.type = arrow;
 
-	// Set the marker action.  Options are ADD and DELETE
+	// Set the marker action. Options are ADD and DELETE
 	marker2.action = visualization_msgs::Marker::ADD;
 
-	// Set the pose of the marker.  This is a full 6DOF pose relative to the frame/time specified in the header
+	// Set the pose of the marker. This is a full 6DOF pose relative to the frame/time specified in the header
 	marker2.pose.position.x = 0;
 	marker2.pose.position.y = 0;
 	marker2.pose.position.z = 0;
@@ -191,6 +193,81 @@ void telemetryCallback(const AU_UAV_ROS::TelemetryUpdate::ConstPtr& msg)
 
 	// Publish the marker
 	marker_pub.publish(marker2);
+
+//request waypoint info to publish a square at each plane's next waypoint location.
+	AU_UAV_ROS::RequestWaypointInfo srv;
+	srv.request.planeID = msg->planeID;
+	srv.request.isAvoidanceWaypoint = false;
+	srv.request.positionInQueue = 1;//msg->currentWaypointIndex;
+
+	if(requestWaypointInfoClient.call(srv))
+	{
+	//set up verticies of triangle
+	struct waypoint northsouthpointWP;
+	northsouthpointWP.latitude=srv.response.latitude;//srv->currentLatitude;
+	northsouthpointWP.longitude=WEST_MOST_LONGITUDE;
+	struct waypoint eastwestpointWP;
+	eastwestpointWP.latitude=NORTH_MOST_LATITUDE;
+	eastwestpointWP.longitude=srv.response.longitude;//srv->currentLongitude;
+
+	std::stringstream sstm2;
+	sstm2 << "WP" << buffer;
+
+
+	transform.setOrigin( tf::Vector3(distance(origin,eastwestpointWP), -distance(origin,northsouthpointWP),0));
+  	transform.setRotation( tf::Quaternion(0, 0, 0) );
+  	br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "world", sstm2.str()));
+	}
+
+
+
+	//set shape
+	shape = visualization_msgs::Marker::SPHERE;
+
+	visualization_msgs::Marker marker3;
+	// Set the frame ID and timestamp.  See the TF tutorials for information on these.
+	std::stringstream sstm3;
+	sstm3 << "/WP" << buffer;
+	marker3.header.frame_id = sstm3.str();
+
+	marker3.header.stamp = ros::Time::now();
+
+	// Set the namespace and id for this marker.  This serves to create a unique ID
+	// Any marker sent with the same namespace and id will overwrite the old one
+	marker3.ns = "basic_shapes";
+	marker3.id = planeID+2000;
+
+	// Set the marker type.  Initially this is CUBE, and cycles between that and SPHERE, ARROW, and CYLINDER
+	marker3.type = shape;
+
+	// Set the marker action.  Options are ADD and DELETE
+	marker3.action = visualization_msgs::Marker::ADD;
+
+	// Set the pose of the marker.  This is a full 6DOF pose relative to the frame/time specified in the header
+	marker3.pose.position.x = 0;
+	marker3.pose.position.y = 0;
+	marker3.pose.position.z = 0;
+	marker3.pose.orientation.x = 0.0;
+	marker3.pose.orientation.y = 0.0;
+	marker3.pose.orientation.z = 0.0;
+	marker3.pose.orientation.w = 1.0;
+
+	// Set the scale of the marker -- 1x1x1 here means 1m on a side
+	marker3.scale.x = 24.0;
+	marker3.scale.y = 24.0;
+	marker3.scale.z = 24.0;
+
+	// Set the color -- be sure to set alpha to something non-zero!
+	marker3.color.r = 0.0f;
+	marker3.color.g = 0.0f;
+	marker3.color.b = 1.0f;
+	marker3.color.a = 0.7f;
+
+	marker3.lifetime = ros::Duration();
+
+	// Publish the marker
+	marker_pub.publish(marker3);
+
 }
 
 
@@ -205,6 +282,9 @@ int main(int argc, char **argv)
 	
 	//subscribe to telemetry outputs and create client for the avoid collision service
 	ros::Subscriber sub = n.subscribe("telemetry", 1000, telemetryCallback);
+
+	//subscribe to requestWaypointInfo service
+	requestWaypointInfoClient = n.serviceClient<AU_UAV_ROS::RequestWaypointInfo>("request_waypoint_info");
 
 	//publish basic shapes to plane positions
   	marker_pub = n.advertise<visualization_msgs::Marker>("visualization_marker", 100);

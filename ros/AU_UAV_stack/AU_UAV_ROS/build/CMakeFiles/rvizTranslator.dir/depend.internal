@@ -4,6 +4,7 @@
 CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o
  ../msg_gen/cpp/include/AU_UAV_ROS/TelemetryUpdate.h
  ../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h
+ ../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h
  /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/rvizTranslator.cpp
  /opt/ros/electric/stacks/bullet/include/LinearMath/btMatrix3x3.h
  /opt/ros/electric/stacks/bullet/include/LinearMath/btMinMax.h

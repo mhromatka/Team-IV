@@ -54,6 +54,30 @@ ros/assert.h
 ros/service_traits.h
 ../srv_gen/cpp/include/AU_UAV_ROS/ros/service_traits.h
 
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h
+string
+-
+vector
+-
+map
+-
+ostream
+-
+ros/serialization.h
+../srv_gen/cpp/include/AU_UAV_ROS/ros/serialization.h
+ros/builtin_message_traits.h
+../srv_gen/cpp/include/AU_UAV_ROS/ros/builtin_message_traits.h
+ros/message_operations.h
+../srv_gen/cpp/include/AU_UAV_ROS/ros/message_operations.h
+ros/time.h
+../srv_gen/cpp/include/AU_UAV_ROS/ros/time.h
+ros/macros.h
+../srv_gen/cpp/include/AU_UAV_ROS/ros/macros.h
+ros/assert.h
+../srv_gen/cpp/include/AU_UAV_ROS/ros/assert.h
+ros/service_traits.h
+../srv_gen/cpp/include/AU_UAV_ROS/ros/service_traits.h
+
 /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/rvizTranslator.cpp
 sstream
 -
@@ -77,6 +101,8 @@ tf/transform_broadcaster.h
 -
 visualization_msgs/Marker.h
 -
+AU_UAV_ROS/RequestWaypointInfo.h
+/home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/RequestWaypointInfo.h
 
 /opt/ros/electric/stacks/bullet/include/LinearMath/btMatrix3x3.h
 btVector3.h

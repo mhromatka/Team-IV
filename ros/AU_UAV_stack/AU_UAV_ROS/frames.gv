@@ -1,0 +1,8 @@
+digraph G {
+"/world" -> "/0"[label="Broadcaster: /rvizTranslator\nAverage rate: 1.250 Hz\nMost recent transform: 0.684 sec old \nBuffer length: 4.000 sec\n"];
+"/world" -> "/2"[label="Broadcaster: /rvizTranslator\nAverage rate: 1.250 Hz\nMost recent transform: 0.683 sec old \nBuffer length: 4.000 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1339190153.458"[ shape=plaintext ] ;
+ }->"/world";
+}

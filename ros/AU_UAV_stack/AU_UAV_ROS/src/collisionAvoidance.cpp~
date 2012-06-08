@@ -28,7 +28,7 @@ void telemetryCallback(const AU_UAV_ROS::TelemetryUpdate::ConstPtr& msg)
 	
 	//this 'if' statement will be changed to run when collision avoidance service needs to be used
 	if(false) //collision detection OR run everytime
-	{
+	//{
 		//this will be replaced by students to do more than just send a string
 		std::stringstream ss;
 		ss << "Sending service request " << count++;
