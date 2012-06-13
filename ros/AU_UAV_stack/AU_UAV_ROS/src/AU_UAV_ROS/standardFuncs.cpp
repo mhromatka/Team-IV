@@ -35,7 +35,7 @@ struct waypoint origin;
 //This function will return the plane's XYZ coordinates (the same coordinates being published to the RVIZ simulator)
 //This function DOES take the earth's curvature into consideration
 //The function uses the "getActualDistance" function with the top/left-most point and the plane's lat/long/alt
-struct getPlaneXYZ(struct waypoint planePosition){
+AU_UAV_ROS::waypoint getPlaneXYZ(AU_UAV_ROS::waypoint planePosition){
 	//set up verticies of triangle
 	origin.latitude=NORTH_MOST_LATITUDE;
 	origin.longitude=WEST_MOST_LONGITUDE;
@@ -60,7 +60,7 @@ struct getPlaneXYZ(struct waypoint planePosition){
 }
 //This function will return the actual distance between two points in space (lat/long/alt)
 //This function DOES take the earth's curvature into consideration
-double getActualDistance(struct waypoint first, struct waypoint second)
+double getActualDistance(AU_UAV_ROS::waypoint first, AU_UAV_ROS::waypoint second)
 {
 	//difference in latitudes in radians
 	double lat1 = first.latitude*DEGREES_TO_RADIANS;

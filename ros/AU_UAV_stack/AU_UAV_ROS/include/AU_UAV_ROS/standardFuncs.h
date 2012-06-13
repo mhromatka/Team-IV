@@ -12,6 +12,12 @@ IMPORTANT NOTE: All of the angles passed to the functions and returned from thes
 const double PI = 4*atan(1);
 const double DEGREE_TO_RAD = PI/180; /* convert degrees to radians */
 
+
+//returns coordinate position of plane based on waypoint in lat/long
+AU_UAV_ROS::waypoint getPlaneXYZ(AU_UAV_ROS::waypoint planePosition);
+
+//gets distance between two positions in lat/long measurements, returns distance in meters
+double getActualDistance(AU_UAV_ROS::waypoint first, AU_UAV_ROS::waypoint second);
 //get distance between two planes (in meters)
 double getPlaneDist(int planeID);
 

@@ -35,7 +35,7 @@ struct waypoint origin;
 //This function will return the plane's XYZ coordinates (the same coordinates being published to the RVIZ simulator)
 //This function DOES take the earth's curvature into consideration
 //The function uses the "getActualDistance" function with the top/left-most point and the plane's lat/long/alt
-struct getPlaneXYZ(struct waypoint planePosition){
+waypoint getPlaneXYZ(struct waypoint planePosition){
 	//set up verticies of triangle
 	origin.latitude=NORTH_MOST_LATITUDE;
 	origin.longitude=WEST_MOST_LONGITUDE;
@@ -87,7 +87,7 @@ double getActualDistance(struct waypoint first, struct waypoint second)
 double getNewHeading(struct waypoint first, struct waypoint second)
 {
 	double deltaX = second.latitude - first.latitude;
-	double deltaY = second.longtitude - second.longitude;
+	double deltaY = second.longitude - second.longitude;
 	double heading = atan(deltaX/deltaY);
 	if (deltaX >= 0)
 		return heading*DEGREES_TO_RADIANS;
