@@ -21,6 +21,7 @@ is already setup along with a dummy version of how the service request would wor
 #include <tf/transform_broadcaster.h>
 #include <visualization_msgs/Marker.h>
 #include "AU_UAV_ROS/RequestWaypointInfo.h"
+#include "AU_UAV_ROS/standardFuncs.h"
 
 
 #define WEST_MOST_LONGITUDE -85.490356
@@ -96,6 +97,18 @@ void telemetryCallback(const AU_UAV_ROS::TelemetryUpdate::ConstPtr& msg)
 	char buffer [5];
 	sprintf(buffer, "%d",planeID);
 	   br.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "world", buffer));
+/*
+	ROS_INFO("planeID is: %d", planeID);
+	if(planeID == 0){
+		double distance;
+		int planeIDtest;
+		planeIDtest=1;
+		distance = getPlaneDist(planeIDtest);	
+		ROS_INFO("Distance is: %f", distance);
+}
+
+*/
+
 
 	uint32_t shape = visualization_msgs::Marker::SPHERE;
 
@@ -130,9 +143,9 @@ void telemetryCallback(const AU_UAV_ROS::TelemetryUpdate::ConstPtr& msg)
 	marker.pose.orientation.w = 1.0;
 
 	// Set the scale of the marker -- 1x1x1 here means 1m on a side
-	marker.scale.x = 24.0;
-	marker.scale.y = 24.0;
-	marker.scale.z = 24.0;
+	marker.scale.x = 12.0;
+	marker.scale.y = 12.0;
+	marker.scale.z = 12.0;
 
 	// Set the color -- be sure to set alpha to something non-zero!
 	marker.color.r = 0.0f;
@@ -253,9 +266,9 @@ void telemetryCallback(const AU_UAV_ROS::TelemetryUpdate::ConstPtr& msg)
 	marker3.pose.orientation.w = 1.0;
 
 	// Set the scale of the marker -- 1x1x1 here means 1m on a side
-	marker3.scale.x = 24.0;
-	marker3.scale.y = 24.0;
-	marker3.scale.z = 24.0;
+	marker3.scale.x = 12.0;
+	marker3.scale.y = 12.0;
+	marker3.scale.z = 12.0;
 
 	// Set the color -- be sure to set alpha to something non-zero!
 	marker3.color.r = 0.0f;

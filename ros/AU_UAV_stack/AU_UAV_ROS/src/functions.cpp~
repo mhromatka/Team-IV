@@ -5,7 +5,31 @@ are related to implementation, not usage.
 
 #include <cmath>
 #include <stdlib.h>
+#include <ros/ros.h>
 #include "AU_UAV_ROS/standardFuncs.h"
+#include "AU_UAV_ROS/standardDefs.h"
+#include <tf/transform_listener.h>
+
+
+double getPlaneDist(int planeID){
+	//create TF listener here
+	tf::TransformListener listener;
+	tf::StampedTransform transform;
+	try{
+		listener.lookupTransform("/0", "/world", ros::Time::now(), transform
+	}
+	catch (tf::TransformException ex{
+		ROS_ERROR("%s",ex.what());
+	}
+
+	//return distance here
+	distance = sqrt(pow(transform.getOrigin().x,2) + pow(transform.getOrigin().y,2) + pow(transform.getOrigin().z,2);
+	return distance;
+	//ROS_INFO("x is ", transform.getOrigin().x);
+	//ROS_INFO("y is ", transform.getOrigin().y);
+	//ROS_INFO("z is ", transform.getOrigin().z);
+}
+
 
 /*
 Given a waypoint (latitude, longitude, and altitude) as well as the bearing and angular distance to travel,
@@ -139,3 +163,6 @@ double findAngle(double lat1, double long1, double lat2, double long2){
 	//Angle will be in degrees.
 	return angle;
 }
+
+/*
+Given position at t-1 and at t, calculate heading on [-180, 180] where E = 90, N = 0 degrees

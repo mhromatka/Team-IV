@@ -12,6 +12,9 @@ IMPORTANT NOTE: All of the angles passed to the functions and returned from thes
 const double PI = 4*atan(1);
 const double DEGREE_TO_RAD = PI/180; /* convert degrees to radians */
 
+//get distance between two planes (in meters)
+double getPlaneDist(int planeID);
+
 /*
 Takes the current location in the form of a waypoint, and given a bearing and angular distance, calculates
 a new waypoint at that specified bearing and distance away.

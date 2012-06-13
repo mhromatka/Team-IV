@@ -1,0 +1,45 @@
+
+#include "ros/ros.h"
+#include "AU_UAV_ROS/standardFuncs.h"
+
+
+//default constructor
+AU_UAV_ROS::PlanePose::PlanePose(){
+	this->id = 0;
+	this->x = 0;
+	this->y = 0;
+	this->z = 0;
+	this->heading = 0;
+}
+
+AU_UAV_ROS::PlanePose::PlanePose(int id, double x, double y, double z, double heading){
+	this->id = id;
+	this->x = x;
+	this->y = y;
+	this->z = z;
+	this->heading = heading;
+}
+
+double AU_UAV_ROS::PlanePose::setX(double newX){
+	this->x = newX; 
+}
+
+double AU_UAV_ROS::PlanePose::setY(double newY){
+	this->y = newY; 
+}
+double AU_UAV_ROS::PlanePose::setZ(double newZ){
+	this->z = newZ; 
+}
+double AU_UAV_ROS::PlanePose::setHeading(double newHeading){
+	this->heading = newHeading; 
+}
+
+void AU_UAV_ROS::PlanePose::update(const AU_UAV_ROS::TelemetryUpdate &msg){
+	double newX = //math msg.currentLatitude
+
+	this->setX(newX); /* call inherited function */
+	this->setLongitude(msg.currentLongitude); /* call inherited function */
+	this->setAltitude(msg.currentAltitude);
+	this->setSpeed(msg.groundSpeed);
+	this->lastUpdateTime = ros::Time::now().toSec();
+}

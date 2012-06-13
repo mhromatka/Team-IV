@@ -1,8 +1,15 @@
 digraph G {
-"/world" -> "/0"[label="Broadcaster: /rvizTranslator\nAverage rate: 1.250 Hz\nMost recent transform: 0.684 sec old \nBuffer length: 4.000 sec\n"];
-"/world" -> "/2"[label="Broadcaster: /rvizTranslator\nAverage rate: 1.250 Hz\nMost recent transform: 0.683 sec old \nBuffer length: 4.000 sec\n"];
+"/world" -> "/0"[label="Broadcaster: /rvizTranslator\nAverage rate: 1.250 Hz\nMost recent transform: 0.949 sec old \nBuffer length: 3.999 sec\n"];
+"/world" -> "/WP0"[label="Broadcaster: /rvizTranslator\nAverage rate: 1.251 Hz\nMost recent transform: 0.943 sec old \nBuffer length: 3.998 sec\n"];
+"/world" -> "/1"[label="Broadcaster: /rvizTranslator\nAverage rate: 1.251 Hz\nMost recent transform: 0.943 sec old \nBuffer length: 3.998 sec\n"];
+"/world" -> "/WP1"[label="Broadcaster: /rvizTranslator\nAverage rate: 1.251 Hz\nMost recent transform: 0.940 sec old \nBuffer length: 3.996 sec\n"];
+"/world" -> "/2"[label="Broadcaster: /rvizTranslator\nAverage rate: 1.251 Hz\nMost recent transform: 0.940 sec old \nBuffer length: 3.996 sec\n"];
+"/world" -> "/WP2"[label="Broadcaster: /rvizTranslator\nAverage rate: 1.251 Hz\nMost recent transform: 0.935 sec old \nBuffer length: 3.998 sec\n"];
+"/world" -> "/3"[label="Broadcaster: /rvizTranslator\nAverage rate: 1.251 Hz\nMost recent transform: 0.935 sec old \nBuffer length: 3.998 sec\n"];
+"/world" -> "/WP3"[label="Broadcaster: /rvizTranslator\nAverage rate: 1.250 Hz\nMost recent transform: 0.931 sec old \nBuffer length: 3.999 sec\n"];
+"/world" -> "/link1"[label="Broadcaster: /link1_broadcaster\nAverage rate: 10.193 Hz\nMost recent transform: -0.083 sec old \nBuffer length: 4.905 sec\n"];
 edge [style=invis];
  subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
-"Recorded at time: 1339190153.458"[ shape=plaintext ] ;
+"Recorded at time: 1339442964.676"[ shape=plaintext ] ;
  }->"/world";
 }

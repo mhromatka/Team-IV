@@ -1,2 +1,2 @@
-from ._Command import *
-from ._TelemetryUpdate import *
+from _Command import *
+from _TelemetryUpdate import *

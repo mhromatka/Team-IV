@@ -1,0 +1,9 @@
+<launch>
+	<node name="coordinator" pkg="AU_UAV_ROS" type="coordinator"/>
+	<node name="KMLCreator" pkg="AU_UAV_ROS" type="KMLCreator" output="screen" />
+	<node name="simulator" pkg="AU_UAV_ROS" type="simulator" />
+	<node name="evaluator" pkg="AU_UAV_ROS" type="evaluator" output="screen" />
+	<node name="rvizTranslator" pkg="AU_UAV_ROS" type="rvizTranslator" output="screen" />
+	<node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="1 2 3 0 0 0 world link1 100" />
+	<node name="collisionAvoidance" pkg="AU_UAV_ROS" type="collisionAvoidance" output="screen" />
+</launch>

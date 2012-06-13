@@ -13,22 +13,29 @@ is already setup along with a dummy version of how the service request would wor
 #include "ros/ros.h"
 #include "AU_UAV_ROS/TelemetryUpdate.h"
 #include "AU_UAV_ROS/GoToWaypoint.h"
+#include "AU_UAV_ROS/standardFuncs.h"
+#include "AU_UAV_ROS/standardDefs.h"
 
 //ROS service client for calling a service from the coordinator
 ros::ServiceClient client;
 
 //keeps count of the number of services requested
 int count;
+double heading = 0.0;//check to make sure planes actually do initiate with 0.0 heading????
 
 //this function is run everytime new telemetry information from any plane is recieved
 void telemetryCallback(const AU_UAV_ROS::TelemetryUpdate::ConstPtr& msg)
 {
-	//TODO:Make this function do something useful, aka an avoidance algorithm
-	//ROS_INFO("Received update #[%lld]", msg->currentWaypointIndex);
+
+	//currentHeading = getNewHeading(msg->planeID);
 	
+	
+
+
+
 	//this 'if' statement will be changed to run when collision avoidance service needs to be used
 	if(false) //collision detection OR run everytime
-	//{
+	{
 		//this will be replaced by students to do more than just send a string
 		std::stringstream ss;
 		ss << "Sending service request " << count++;
