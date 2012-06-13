@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS
+CMAKE_SOURCE_DIR = /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build
+CMAKE_BINARY_DIR = /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/rvizTranslator.dir/depend.make
@@ -49,65 +49,34 @@ include CMakeFiles/rvizTranslator.dir/flags.make
 CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: CMakeFiles/rvizTranslator.dir/flags.make
 CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: ../src/rvizTranslator.cpp
 CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: ../manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/ros/tools/rospack/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/ros/core/roslib/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/ros/core/rosbuild/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/ros/core/roslang/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/ros/tools/rosclean/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/tools/rosgraph/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/tools/rosparam/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/tools/rosmaster/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/tools/rosout/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/tools/roslaunch/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/ros/tools/rosunit/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/tools/rostest/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/tools/rosbag/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/tools/rosbagmigration/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/common_msgs/geometry_msgs/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/common_msgs/visualization_msgs/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/bullet/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/geometry/angles/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/tools/rosnode/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/tools/rosmsg/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/tools/rostopic/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/tools/rosservice/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/utilities/roswtf/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/utilities/message_filters/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/geometry/tf/manifest.xml
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/srv_gen/generated
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/common_msgs/geometry_msgs/msg_gen/generated
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/common_msgs/visualization_msgs/msg_gen/generated
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/msg_gen/generated
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/srv_gen/generated
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/geometry/tf/msg_gen/generated
-CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/electric/stacks/geometry/tf/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_1)
+CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/fuerte/share/std_msgs/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/fuerte/share/roslang/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/fuerte/share/roscpp/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/fuerte/share/rospy/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/fuerte/share/visualization_msgs/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/fuerte/stacks/bullet/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/fuerte/share/rosconsole/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/fuerte/share/rostest/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/fuerte/share/roswtf/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/fuerte/share/message_filters/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/fuerte/share/roslib/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o -c /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/rvizTranslator.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o -c /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/rvizTranslator.cpp
 
 CMakeFiles/rvizTranslator.dir/src/rvizTranslator.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rvizTranslator.dir/src/rvizTranslator.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/rvizTranslator.cpp > CMakeFiles/rvizTranslator.dir/src/rvizTranslator.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/rvizTranslator.cpp > CMakeFiles/rvizTranslator.dir/src/rvizTranslator.i
 
 CMakeFiles/rvizTranslator.dir/src/rvizTranslator.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rvizTranslator.dir/src/rvizTranslator.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/rvizTranslator.cpp -o CMakeFiles/rvizTranslator.dir/src/rvizTranslator.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/rvizTranslator.cpp -o CMakeFiles/rvizTranslator.dir/src/rvizTranslator.s
 
 CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o.requires:
 .PHONY : CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o.requires
@@ -118,14 +87,57 @@ CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o.provides: CMakeFiles/rvizTran
 
 CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o.provides.build: CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o
 
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: CMakeFiles/rvizTranslator.dir/flags.make
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: ../src/AU_UAV_ROS/standardFuncs.cpp
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: ../manifest.xml
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/std_msgs/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/roslang/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/roscpp/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/rospy/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/visualization_msgs/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/stacks/bullet/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/rosconsole/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/rostest/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/roswtf/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/message_filters/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/roslib/manifest.xml
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o -c /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardFuncs.cpp
+
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardFuncs.cpp > CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.i
+
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardFuncs.cpp -o CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.s
+
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o.requires:
+.PHONY : CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o.requires
+
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o.provides: CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o.requires
+	$(MAKE) -f CMakeFiles/rvizTranslator.dir/build.make CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o.provides.build
+.PHONY : CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o.provides
+
+CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o.provides.build: CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o
+
 # Object files for target rvizTranslator
 rvizTranslator_OBJECTS = \
-"CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o"
+"CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o" \
+"CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o"
 
 # External object files for target rvizTranslator
 rvizTranslator_EXTERNAL_OBJECTS =
 
 ../bin/rvizTranslator: CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o
+../bin/rvizTranslator: CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o
 ../bin/rvizTranslator: CMakeFiles/rvizTranslator.dir/build.make
 ../bin/rvizTranslator: CMakeFiles/rvizTranslator.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../bin/rvizTranslator"
@@ -136,6 +148,7 @@ CMakeFiles/rvizTranslator.dir/build: ../bin/rvizTranslator
 .PHONY : CMakeFiles/rvizTranslator.dir/build
 
 CMakeFiles/rvizTranslator.dir/requires: CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o.requires
+CMakeFiles/rvizTranslator.dir/requires: CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o.requires
 .PHONY : CMakeFiles/rvizTranslator.dir/requires
 
 CMakeFiles/rvizTranslator.dir/clean:
@@ -143,6 +156,6 @@ CMakeFiles/rvizTranslator.dir/clean:
 .PHONY : CMakeFiles/rvizTranslator.dir/clean
 
 CMakeFiles/rvizTranslator.dir/depend:
-	cd /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles/rvizTranslator.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles/rvizTranslator.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rvizTranslator.dir/depend
 

@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,15 +32,18 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS
+CMAKE_SOURCE_DIR = /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build
+CMAKE_BINARY_DIR = /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build
 
 # Utility rule file for test-results.
 
+# Include the progress variables for this target.
+include CMakeFiles/test-results.dir/progress.make
+
 CMakeFiles/test-results:
-	/opt/ros/electric/ros/tools/rosunit/scripts/summarize_results.py --nodeps AU_UAV_ROS
+	/opt/ros/fuerte/share/rosunit/bin/summarize_results.py --nodeps AU_UAV_ROS
 
 test-results: CMakeFiles/test-results
 test-results: CMakeFiles/test-results.dir/build.make
@@ -55,6 +58,6 @@ CMakeFiles/test-results.dir/clean:
 .PHONY : CMakeFiles/test-results.dir/clean
 
 CMakeFiles/test-results.dir/depend:
-	cd /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles/test-results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles/test-results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test-results.dir/depend
 

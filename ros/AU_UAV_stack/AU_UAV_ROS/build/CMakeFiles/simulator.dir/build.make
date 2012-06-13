@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS
+CMAKE_SOURCE_DIR = /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build
+CMAKE_BINARY_DIR = /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/simulator.dir/depend.make
@@ -49,65 +49,34 @@ include CMakeFiles/simulator.dir/flags.make
 CMakeFiles/simulator.dir/src/simulator.o: CMakeFiles/simulator.dir/flags.make
 CMakeFiles/simulator.dir/src/simulator.o: ../src/simulator.cpp
 CMakeFiles/simulator.dir/src/simulator.o: ../manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/ros/tools/rospack/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/ros/core/roslib/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/ros/core/rosbuild/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/ros/core/roslang/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/ros/tools/rosclean/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/tools/rosgraph/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/tools/rosparam/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/tools/rosmaster/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/tools/rosout/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/tools/roslaunch/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/ros/tools/rosunit/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/tools/rostest/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/tools/rosbag/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/tools/rosbagmigration/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/common_msgs/geometry_msgs/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/common_msgs/visualization_msgs/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/bullet/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/geometry/angles/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/tools/rosnode/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/tools/rosmsg/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/tools/rostopic/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/tools/rosservice/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/utilities/roswtf/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/utilities/message_filters/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/geometry/tf/manifest.xml
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/srv_gen/generated
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/common_msgs/geometry_msgs/msg_gen/generated
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/common_msgs/visualization_msgs/msg_gen/generated
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/msg_gen/generated
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/srv_gen/generated
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/geometry/tf/msg_gen/generated
-CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/electric/stacks/geometry/tf/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_1)
+CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/fuerte/share/std_msgs/manifest.xml
+CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/fuerte/share/roslang/manifest.xml
+CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/fuerte/share/roscpp/manifest.xml
+CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/fuerte/share/rospy/manifest.xml
+CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/fuerte/share/visualization_msgs/manifest.xml
+CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/fuerte/stacks/bullet/manifest.xml
+CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/fuerte/share/rosconsole/manifest.xml
+CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/fuerte/share/rostest/manifest.xml
+CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/fuerte/share/roswtf/manifest.xml
+CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/fuerte/share/message_filters/manifest.xml
+CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/fuerte/share/roslib/manifest.xml
+CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+CMakeFiles/simulator.dir/src/simulator.o: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/simulator.dir/src/simulator.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/simulator.dir/src/simulator.o -c /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/simulator.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/simulator.dir/src/simulator.o -c /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/simulator.cpp
 
 CMakeFiles/simulator.dir/src/simulator.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simulator.dir/src/simulator.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/simulator.cpp > CMakeFiles/simulator.dir/src/simulator.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/simulator.cpp > CMakeFiles/simulator.dir/src/simulator.i
 
 CMakeFiles/simulator.dir/src/simulator.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/simulator.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/simulator.cpp -o CMakeFiles/simulator.dir/src/simulator.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/simulator.cpp -o CMakeFiles/simulator.dir/src/simulator.s
 
 CMakeFiles/simulator.dir/src/simulator.o.requires:
 .PHONY : CMakeFiles/simulator.dir/src/simulator.o.requires
@@ -121,65 +90,34 @@ CMakeFiles/simulator.dir/src/simulator.o.provides.build: CMakeFiles/simulator.di
 CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: CMakeFiles/simulator.dir/flags.make
 CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: ../src/AU_UAV_ROS/SimulatedPlane.cpp
 CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: ../manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/ros/tools/rospack/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/ros/core/roslib/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/ros/core/rosbuild/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/ros/core/roslang/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/ros/tools/rosclean/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/tools/rosgraph/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/tools/rosparam/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/tools/rosmaster/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/tools/rosout/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/tools/roslaunch/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/ros/tools/rosunit/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/tools/rostest/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/tools/rosbag/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/tools/rosbagmigration/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/common_msgs/geometry_msgs/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/common_msgs/visualization_msgs/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/bullet/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/geometry/angles/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/tools/rosnode/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/tools/rosmsg/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/tools/rostopic/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/tools/rosservice/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/utilities/roswtf/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/utilities/message_filters/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/geometry/tf/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/srv_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/common_msgs/geometry_msgs/msg_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/common_msgs/visualization_msgs/msg_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/msg_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/srv_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/geometry/tf/msg_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/electric/stacks/geometry/tf/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_2)
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/fuerte/share/std_msgs/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/fuerte/share/roslang/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/fuerte/share/roscpp/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/fuerte/share/rospy/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/fuerte/share/visualization_msgs/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/fuerte/stacks/bullet/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/fuerte/share/rosconsole/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/fuerte/share/rostest/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/fuerte/share/roswtf/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/fuerte/share/message_filters/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/fuerte/share/roslib/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o -c /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/SimulatedPlane.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o -c /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/SimulatedPlane.cpp
 
 CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/SimulatedPlane.cpp > CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/SimulatedPlane.cpp > CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.i
 
 CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/SimulatedPlane.cpp -o CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/SimulatedPlane.cpp -o CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.s
 
 CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o.requires:
 .PHONY : CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o.requires
@@ -193,65 +131,34 @@ CMakeFiles/simulator.dir/src/AU_UAV_ROS/SimulatedPlane.o.provides.build: CMakeFi
 CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: CMakeFiles/simulator.dir/flags.make
 CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: ../src/AU_UAV_ROS/standardDefs.cpp
 CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: ../manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/ros/tools/rospack/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/ros/core/roslib/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/ros/core/rosbuild/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/ros/core/roslang/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/ros/tools/rosclean/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosgraph/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosparam/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosmaster/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosout/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/roslaunch/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/ros/tools/rosunit/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rostest/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosbag/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosbagmigration/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/common_msgs/geometry_msgs/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/common_msgs/visualization_msgs/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/bullet/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/geometry/angles/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosnode/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosmsg/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rostopic/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosservice/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/utilities/roswtf/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/utilities/message_filters/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/geometry/tf/manifest.xml
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/srv_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/common_msgs/geometry_msgs/msg_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/common_msgs/visualization_msgs/msg_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/msg_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/srv_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/geometry/tf/msg_gen/generated
-CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/geometry/tf/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_3)
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/std_msgs/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/roslang/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/roscpp/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/rospy/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/visualization_msgs/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/stacks/bullet/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/rosconsole/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/rostest/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/roswtf/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/message_filters/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/roslib/manifest.xml
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o -c /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardDefs.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o -c /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardDefs.cpp
 
 CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardDefs.cpp > CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardDefs.cpp > CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.i
 
 CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardDefs.cpp -o CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardDefs.cpp -o CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.s
 
 CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o.requires:
 .PHONY : CMakeFiles/simulator.dir/src/AU_UAV_ROS/standardDefs.o.requires
@@ -293,6 +200,6 @@ CMakeFiles/simulator.dir/clean:
 .PHONY : CMakeFiles/simulator.dir/clean
 
 CMakeFiles/simulator.dir/depend:
-	cd /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles/simulator.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles/simulator.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/simulator.dir/depend
 

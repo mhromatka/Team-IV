@@ -7,14 +7,14 @@ FILE(REMOVE_RECURSE
   "../srv_gen"
   "CMakeFiles/ROSBUILD_gensrv_py"
   "../src/AU_UAV_ROS/srv/__init__.py"
-  "../src/AU_UAV_ROS/srv/_RequestWaypointInfo.py"
-  "../src/AU_UAV_ROS/srv/_LoadCourse.py"
-  "../src/AU_UAV_ROS/srv/_CreateSimulatedPlane.py"
-  "../src/AU_UAV_ROS/srv/_RequestPlaneID.py"
   "../src/AU_UAV_ROS/srv/_LoadPath.py"
-  "../src/AU_UAV_ROS/srv/_DeleteSimulatedPlane.py"
   "../src/AU_UAV_ROS/srv/_GoToWaypoint.py"
+  "../src/AU_UAV_ROS/srv/_DeleteSimulatedPlane.py"
+  "../src/AU_UAV_ROS/srv/_RequestWaypointInfo.py"
+  "../src/AU_UAV_ROS/srv/_RequestPlaneID.py"
+  "../src/AU_UAV_ROS/srv/_LoadCourse.py"
   "../src/AU_UAV_ROS/srv/_SaveFlightData.py"
+  "../src/AU_UAV_ROS/srv/_CreateSimulatedPlane.py"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS
+CMAKE_SOURCE_DIR = /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build
+CMAKE_BINARY_DIR = /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/collisionAvoidance.dir/depend.make
@@ -49,65 +49,34 @@ include CMakeFiles/collisionAvoidance.dir/flags.make
 CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: CMakeFiles/collisionAvoidance.dir/flags.make
 CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: ../src/collisionAvoidance.cpp
 CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: ../manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/ros/tools/rospack/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/ros/core/roslib/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/ros/core/rosbuild/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/ros/core/roslang/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/ros/tools/rosclean/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/tools/rosgraph/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/tools/rosparam/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/tools/rosmaster/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/tools/rosout/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/tools/roslaunch/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/ros/tools/rosunit/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/tools/rostest/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/tools/rosbag/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/tools/rosbagmigration/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/common_msgs/geometry_msgs/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/common_msgs/visualization_msgs/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/bullet/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/geometry/angles/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/tools/rosnode/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/tools/rosmsg/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/tools/rostopic/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/tools/rosservice/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/utilities/roswtf/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/utilities/message_filters/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/geometry/tf/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/srv_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/common_msgs/geometry_msgs/msg_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/common_msgs/visualization_msgs/msg_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/msg_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/srv_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/geometry/tf/msg_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/electric/stacks/geometry/tf/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_1)
+CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/fuerte/share/std_msgs/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/fuerte/share/roslang/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/fuerte/share/roscpp/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/fuerte/share/rospy/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/fuerte/share/visualization_msgs/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/fuerte/stacks/bullet/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/fuerte/share/rosconsole/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/fuerte/share/rostest/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/fuerte/share/roswtf/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/fuerte/share/message_filters/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/fuerte/share/roslib/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o -c /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/collisionAvoidance.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o -c /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/collisionAvoidance.cpp
 
 CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/collisionAvoidance.cpp > CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/collisionAvoidance.cpp > CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.i
 
 CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/collisionAvoidance.cpp -o CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/collisionAvoidance.cpp -o CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.s
 
 CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o.requires:
 .PHONY : CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o.requires
@@ -121,65 +90,34 @@ CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o.provides.build: CMake
 CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: CMakeFiles/collisionAvoidance.dir/flags.make
 CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: ../src/AU_UAV_ROS/standardDefs.cpp
 CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: ../manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/ros/tools/rospack/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/ros/core/roslib/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/ros/core/rosbuild/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/ros/core/roslang/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/ros/tools/rosclean/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosgraph/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosparam/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosmaster/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosout/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/roslaunch/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/ros/tools/rosunit/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rostest/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosbag/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosbagmigration/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/common_msgs/geometry_msgs/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/common_msgs/visualization_msgs/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/bullet/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/geometry/angles/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosnode/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosmsg/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rostopic/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/rosservice/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/utilities/roswtf/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/utilities/message_filters/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/geometry/tf/manifest.xml
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/srv_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/common_msgs/geometry_msgs/msg_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/common_msgs/visualization_msgs/msg_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/msg_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/common_msgs/sensor_msgs/srv_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/geometry/tf/msg_gen/generated
-CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/electric/stacks/geometry/tf/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_2)
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/std_msgs/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/roslang/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/roscpp/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/rospy/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/visualization_msgs/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/stacks/bullet/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/rosconsole/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/rostest/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/roswtf/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/message_filters/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/share/roslib/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o -c /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardDefs.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o -c /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardDefs.cpp
 
 CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardDefs.cpp > CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardDefs.cpp > CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.i
 
 CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardDefs.cpp -o CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardDefs.cpp -o CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.s
 
 CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o.requires:
 .PHONY : CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o.requires
@@ -190,16 +128,59 @@ CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o.provides: CMakeF
 
 CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o.provides.build: CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o
 
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: CMakeFiles/collisionAvoidance.dir/flags.make
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: ../src/AU_UAV_ROS/standardFuncs.cpp
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: ../manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/std_msgs/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/roslang/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/roscpp/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/rospy/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/visualization_msgs/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/stacks/bullet/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/rosconsole/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/rostest/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/roswtf/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/message_filters/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/share/roslib/manifest.xml
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o -c /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardFuncs.cpp
+
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -E /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardFuncs.cpp > CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.i
+
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -DBT_USE_DOUBLE_PRECISION -DBT_EULER_DEFAULT_ZYX -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -S /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/src/AU_UAV_ROS/standardFuncs.cpp -o CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.s
+
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o.requires:
+.PHONY : CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o.requires
+
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o.provides: CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o.requires
+	$(MAKE) -f CMakeFiles/collisionAvoidance.dir/build.make CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o.provides.build
+.PHONY : CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o.provides
+
+CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o.provides.build: CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o
+
 # Object files for target collisionAvoidance
 collisionAvoidance_OBJECTS = \
 "CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o" \
-"CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o"
+"CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o" \
+"CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o"
 
 # External object files for target collisionAvoidance
 collisionAvoidance_EXTERNAL_OBJECTS =
 
 ../bin/collisionAvoidance: CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o
 ../bin/collisionAvoidance: CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o
+../bin/collisionAvoidance: CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o
 ../bin/collisionAvoidance: CMakeFiles/collisionAvoidance.dir/build.make
 ../bin/collisionAvoidance: CMakeFiles/collisionAvoidance.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../bin/collisionAvoidance"
@@ -211,6 +192,7 @@ CMakeFiles/collisionAvoidance.dir/build: ../bin/collisionAvoidance
 
 CMakeFiles/collisionAvoidance.dir/requires: CMakeFiles/collisionAvoidance.dir/src/collisionAvoidance.o.requires
 CMakeFiles/collisionAvoidance.dir/requires: CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardDefs.o.requires
+CMakeFiles/collisionAvoidance.dir/requires: CMakeFiles/collisionAvoidance.dir/src/AU_UAV_ROS/standardFuncs.o.requires
 .PHONY : CMakeFiles/collisionAvoidance.dir/requires
 
 CMakeFiles/collisionAvoidance.dir/clean:
@@ -218,6 +200,6 @@ CMakeFiles/collisionAvoidance.dir/clean:
 .PHONY : CMakeFiles/collisionAvoidance.dir/clean
 
 CMakeFiles/collisionAvoidance.dir/depend:
-	cd /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles/collisionAvoidance.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles/collisionAvoidance.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/collisionAvoidance.dir/depend
 

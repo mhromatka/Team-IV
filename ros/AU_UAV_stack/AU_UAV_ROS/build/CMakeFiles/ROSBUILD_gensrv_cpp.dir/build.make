@@ -4,7 +4,7 @@
 #=============================================================================
 # Special targets provided by cmake.
 
-# Disable implicit rules so canoncical targets will work.
+# Disable implicit rules so canonical targets will work.
 .SUFFIXES:
 
 # Remove some rules from gmake that .SUFFIXES does not remove.
@@ -32,487 +32,242 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS
+CMAKE_SOURCE_DIR = /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build
+CMAKE_BINARY_DIR = /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build
 
 # Utility rule file for ROSBUILD_gensrv_cpp.
 
-CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h
-CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h
-CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h
-CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h
+# Include the progress variables for this target.
+include CMakeFiles/ROSBUILD_gensrv_cpp.dir/progress.make
+
 CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h
-CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h
 CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h
+CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h
+CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h
+CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h
+CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h
 CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h
-
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: ../srv/RequestWaypointInfo.srv
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/gensrv_cpp.py
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/genmsg_cpp.py
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/ros/core/roslib/scripts/gendeps
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: ../manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/ros/tools/rospack/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/ros/core/roslib/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/ros/core/rosbuild/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/ros/core/roslang/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/ros/tools/rosclean/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/tools/rosgraph/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/tools/rosparam/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/tools/rosmaster/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/tools/rosout/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/tools/roslaunch/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/ros/tools/rosunit/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/tools/rostest/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/tools/rosbag/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/tools/rosbagmigration/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/common_msgs/geometry_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/common_msgs/visualization_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/bullet/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/geometry/angles/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/tools/rosnode/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/tools/rosmsg/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/tools/rostopic/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/tools/rosservice/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/utilities/roswtf/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/utilities/message_filters/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/geometry/tf/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/common_msgs/geometry_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/common_msgs/visualization_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/geometry/tf/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/electric/stacks/geometry/tf/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h"
-	/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/gensrv_cpp.py /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/srv/RequestWaypointInfo.srv
-
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: ../srv/LoadCourse.srv
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/gensrv_cpp.py
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/genmsg_cpp.py
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/ros/core/roslib/scripts/gendeps
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: ../manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/ros/tools/rospack/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/ros/core/roslib/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/ros/core/rosbuild/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/ros/core/roslang/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/ros/tools/rosclean/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/tools/rosgraph/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/tools/rosparam/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/tools/rosmaster/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/tools/rosout/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/tools/roslaunch/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/ros/tools/rosunit/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/tools/rostest/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/tools/rosbag/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/tools/rosbagmigration/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/common_msgs/geometry_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/common_msgs/visualization_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/bullet/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/geometry/angles/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/tools/rosnode/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/tools/rosmsg/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/tools/rostopic/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/tools/rosservice/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/utilities/roswtf/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/utilities/message_filters/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/geometry/tf/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/common_msgs/geometry_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/common_msgs/visualization_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/geometry/tf/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/electric/stacks/geometry/tf/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h"
-	/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/gensrv_cpp.py /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/srv/LoadCourse.srv
-
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: ../srv/CreateSimulatedPlane.srv
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/gensrv_cpp.py
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/genmsg_cpp.py
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/ros/core/roslib/scripts/gendeps
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: ../manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/ros/tools/rospack/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/ros/core/roslib/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/ros/core/rosbuild/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/ros/core/roslang/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/ros/tools/rosclean/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosgraph/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosparam/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosmaster/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosout/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/roslaunch/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/ros/tools/rosunit/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rostest/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosbag/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosbagmigration/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/common_msgs/geometry_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/common_msgs/visualization_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/bullet/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/geometry/angles/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosnode/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosmsg/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rostopic/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosservice/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/utilities/roswtf/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/utilities/message_filters/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/geometry/tf/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/common_msgs/geometry_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/common_msgs/visualization_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/geometry/tf/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/electric/stacks/geometry/tf/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h"
-	/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/gensrv_cpp.py /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/srv/CreateSimulatedPlane.srv
-
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: ../srv/RequestPlaneID.srv
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/gensrv_cpp.py
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/genmsg_cpp.py
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/ros/core/roslib/scripts/gendeps
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: ../manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/ros/tools/rospack/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/ros/core/roslib/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/ros/core/rosbuild/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/ros/core/roslang/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/ros/tools/rosclean/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/tools/rosgraph/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/tools/rosparam/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/tools/rosmaster/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/tools/rosout/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/tools/roslaunch/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/ros/tools/rosunit/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/tools/rostest/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/tools/rosbag/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/tools/rosbagmigration/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/common_msgs/geometry_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/common_msgs/visualization_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/bullet/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/geometry/angles/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/tools/rosnode/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/tools/rosmsg/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/tools/rostopic/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/tools/rosservice/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/utilities/roswtf/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/utilities/message_filters/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/geometry/tf/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/common_msgs/geometry_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/common_msgs/visualization_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/geometry/tf/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/electric/stacks/geometry/tf/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h"
-	/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/gensrv_cpp.py /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/srv/RequestPlaneID.srv
+CMakeFiles/ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h
 
 ../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: ../srv/LoadPath.srv
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/gensrv_cpp.py
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/genmsg_cpp.py
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/ros/core/roslib/scripts/gendeps
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/share/roslib/bin/gendeps
 ../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: ../manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/ros/tools/rospack/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/ros/core/roslib/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/ros/core/rosbuild/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/ros/core/roslang/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/ros/tools/rosclean/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/tools/rosgraph/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/tools/rosparam/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/tools/rosmaster/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/tools/rosout/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/tools/roslaunch/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/ros/tools/rosunit/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/tools/rostest/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/tools/rosbag/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/tools/rosbagmigration/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/common_msgs/geometry_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/common_msgs/visualization_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/bullet/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/geometry/angles/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/tools/rosnode/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/tools/rosmsg/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/tools/rostopic/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/tools/rosservice/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/utilities/roswtf/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/utilities/message_filters/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/geometry/tf/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/common_msgs/geometry_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/common_msgs/visualization_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/geometry/tf/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/electric/stacks/geometry/tf/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_5)
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/share/visualization_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/share/roslib/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h"
-	/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/gensrv_cpp.py /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/srv/LoadPath.srv
-
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: ../srv/DeleteSimulatedPlane.srv
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/gensrv_cpp.py
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/genmsg_cpp.py
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/ros/core/roslib/scripts/gendeps
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: ../manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/ros/tools/rospack/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/ros/core/roslib/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/ros/core/rosbuild/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/ros/core/roslang/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/ros/tools/rosclean/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosgraph/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosparam/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosmaster/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosout/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/roslaunch/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/ros/tools/rosunit/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rostest/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosbag/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosbagmigration/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/common_msgs/geometry_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/common_msgs/visualization_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/bullet/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/geometry/angles/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosnode/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosmsg/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rostopic/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/rosservice/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/utilities/roswtf/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/utilities/message_filters/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/geometry/tf/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/common_msgs/geometry_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/common_msgs/visualization_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/geometry/tf/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/electric/stacks/geometry/tf/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h"
-	/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/gensrv_cpp.py /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/srv/DeleteSimulatedPlane.srv
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/srv/LoadPath.srv
 
 ../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: ../srv/GoToWaypoint.srv
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/gensrv_cpp.py
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/genmsg_cpp.py
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/ros/core/roslib/scripts/gendeps
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/share/roslib/bin/gendeps
 ../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: ../manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/ros/tools/rospack/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/ros/core/roslib/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/ros/core/rosbuild/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/ros/core/roslang/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/ros/tools/rosclean/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/tools/rosgraph/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/tools/rosparam/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/tools/rosmaster/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/tools/rosout/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/tools/roslaunch/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/ros/tools/rosunit/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/tools/rostest/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/tools/rosbag/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/tools/rosbagmigration/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/common_msgs/geometry_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/common_msgs/visualization_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/bullet/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/geometry/angles/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/tools/rosnode/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/tools/rosmsg/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/tools/rostopic/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/tools/rosservice/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/utilities/roswtf/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/utilities/message_filters/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/geometry/tf/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/common_msgs/geometry_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/common_msgs/visualization_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/geometry/tf/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/electric/stacks/geometry/tf/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_7)
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/share/visualization_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/share/roslib/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h"
-	/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/gensrv_cpp.py /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/srv/GoToWaypoint.srv
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/srv/GoToWaypoint.srv
+
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: ../srv/DeleteSimulatedPlane.srv
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: ../manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/share/visualization_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/share/roslib/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/srv/DeleteSimulatedPlane.srv
+
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: ../srv/RequestWaypointInfo.srv
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: ../manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/share/visualization_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/share/roslib/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/srv/RequestWaypointInfo.srv
+
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: ../srv/RequestPlaneID.srv
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: ../manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/share/visualization_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/share/roslib/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/srv/RequestPlaneID.srv
+
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: ../srv/LoadCourse.srv
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: ../manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/share/visualization_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/share/roslib/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/srv/LoadCourse.srv
 
 ../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: ../srv/SaveFlightData.srv
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/gensrv_cpp.py
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/genmsg_cpp.py
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/ros/core/roslib/scripts/gendeps
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/share/roslib/bin/gendeps
 ../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: ../manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/ros/tools/rospack/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/ros/core/roslib/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/ros/core/rosbuild/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/ros/core/roslang/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/utilities/cpp_common/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_traits/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/utilities/rostime/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp_serialization/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/utilities/xmlrpcpp/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/tools/rosconsole/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/clients/rospy/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/ros/tools/rosclean/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/tools/rosgraph/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/tools/rosparam/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/tools/rosmaster/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/tools/rosout/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/tools/roslaunch/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/ros/tools/rosunit/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/tools/rostest/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/tools/rosbag/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/tools/rosbagmigration/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/common_msgs/geometry_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/common_msgs/visualization_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/bullet/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/geometry/angles/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/tools/rosnode/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/tools/rosmsg/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/tools/rostopic/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/tools/rosservice/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/utilities/roswtf/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/utilities/message_filters/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/geometry/tf/manifest.xml
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/messages/std_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/messages/rosgraph_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/ros_comm/tools/topic_tools/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/common_msgs/geometry_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/common_msgs/visualization_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/common_msgs/sensor_msgs/srv_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/geometry/tf/msg_gen/generated
-../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/electric/stacks/geometry/tf/srv_gen/generated
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_8)
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/share/visualization_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/share/roslib/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h"
-	/opt/ros/electric/stacks/ros_comm/clients/cpp/roscpp/scripts/gensrv_cpp.py /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/srv/SaveFlightData.srv
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/srv/SaveFlightData.srv
+
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: ../srv/CreateSimulatedPlane.srv
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/share/roscpp/rosbuild/scripts/genmsg_cpp.py
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/share/roslib/bin/gendeps
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: ../manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/share/std_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/share/roslang/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/share/roscpp/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/share/rospy/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/share/geometry_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/share/visualization_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/stacks/bullet/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/share/sensor_msgs/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/share/rosconsole/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/stacks/geometry/angles/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/share/rostest/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/share/roswtf/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/share/message_filters/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/stacks/geometry/tf/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/share/roslib/manifest.xml
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/stacks/geometry/tf/msg_gen/generated
+../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h: /opt/ros/fuerte/stacks/geometry/tf/srv_gen/generated
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h"
+	/opt/ros/fuerte/share/roscpp/rosbuild/scripts/gensrv_cpp.py /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/srv/CreateSimulatedPlane.srv
 
 ROSBUILD_gensrv_cpp: CMakeFiles/ROSBUILD_gensrv_cpp
-ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h
-ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h
-ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h
-ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h
 ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/LoadPath.h
-ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h
 ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/GoToWaypoint.h
+ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/DeleteSimulatedPlane.h
+ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/RequestWaypointInfo.h
+ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/RequestPlaneID.h
+ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/LoadCourse.h
 ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/SaveFlightData.h
+ROSBUILD_gensrv_cpp: ../srv_gen/cpp/include/AU_UAV_ROS/CreateSimulatedPlane.h
 ROSBUILD_gensrv_cpp: CMakeFiles/ROSBUILD_gensrv_cpp.dir/build.make
 .PHONY : ROSBUILD_gensrv_cpp
 
@@ -525,6 +280,6 @@ CMakeFiles/ROSBUILD_gensrv_cpp.dir/clean:
 .PHONY : CMakeFiles/ROSBUILD_gensrv_cpp.dir/clean
 
 CMakeFiles/ROSBUILD_gensrv_cpp.dir/depend:
-	cd /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build /home/uav-team3/AU-UAV-ROS/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles/ROSBUILD_gensrv_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build /home/michelle/Team-IV/ros/AU_UAV_stack/AU_UAV_ROS/build/CMakeFiles/ROSBUILD_gensrv_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ROSBUILD_gensrv_cpp.dir/depend
 

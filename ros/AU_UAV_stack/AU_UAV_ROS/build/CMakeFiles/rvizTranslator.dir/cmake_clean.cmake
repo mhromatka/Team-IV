@@ -6,6 +6,7 @@ FILE(REMOVE_RECURSE
   "../msg_gen"
   "../srv_gen"
   "CMakeFiles/rvizTranslator.dir/src/rvizTranslator.o"
+  "CMakeFiles/rvizTranslator.dir/src/AU_UAV_ROS/standardFuncs.o"
   "../bin/rvizTranslator.pdb"
   "../bin/rvizTranslator"
 )
