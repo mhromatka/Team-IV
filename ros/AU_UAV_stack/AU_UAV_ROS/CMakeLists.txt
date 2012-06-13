@@ -42,7 +42,6 @@ rosbuild_add_executable(KMLCreator src/KMLCreator.cpp)
 rosbuild_add_executable(visualization src/visualization.cpp)
 rosbuild_add_executable(evaluator src/evaluator.cpp src/AU_UAV_ROS/standardDefs.cpp)
 rosbuild_add_executable(rvizTranslator src/rvizTranslator.cpp src/AU_UAV_ROS/standardFuncs.cpp)
-
-
+rosbuild_add_executable(algo src/main.cpp src/test.cpp src/OutputLVar.cpp src/InputLVar.cpp src/RuleBlock.cpp src/LinguisticVariable.cpp src/FuzzyEngine.cpp src/FuzzyOperator.cpp src/TriangularTerm.cpp src/ShoulderTerm.cpp src/AreaCentroidAlgorithm.cpp src/LinguisticTerm.cpp src/HedgeSet.cpp src/FuzzyException.cpp src/FuzzyExceptions.cpp src/MamdaniRule.cpp src/FuzzyAnd.cpp src/FuzzyOr.cpp src/FuzzyOperation.cpp src/FuzzyModulation.cpp src/FuzzyDefuzzifier.cpp src/TrapezoidalTerm.cpp src/StrOp.cpp src/FuzzyRule.cpp src/CompoundTerm.cpp src/TakagiSugenoRule.cpp src/Hedge.cpp src/FunctionTerm.cpp src/DescriptiveAntecedent.cpp src/MamdaniConsequent.cpp src/FuzzyAntecedent.cpp src/FuzzyConsequent.cpp src/TakagiSugenoConsequent.cpp src/TakagiSugenoTerm.cpp src/InfixToPostfix.cpp src/SingletonTerm.cpp )
 #JAVA executables
 #rospack_add_java_executable(XBeeIO com/GCS/xbee/XBeeGCS)
